@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Travel Co. offers unforgettable travel experiences and adventure packages to amazing destinations worldwide.">
+    <meta name="keywords" content="travel, adventure, tour packages, travel destinations">
+    <meta name="author" content="Travel Co. Team">
+    <title>Travel Company</title>
+    <link rel="stylesheet" href="123.css">
+    <style>
+    
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+
+        }
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 400px;
+            border-radius: 5px;
+        }
+        .close-button {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .close-button:hover,
+        .close-button:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+       
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Travel Co.</h1>
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Tour Packages</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Explore the World with Us!</h2>
+        <p>Your adventure starts here. Discover amazing destinations.</p>
+        <a href="#booking" class="cta-button" id="book-now-button">Book Now</a>
+    </section>
+
+    <section id="destinations" style="margin-bottom: 50px;">
+        <h2>Popular Destinations</h2>
+        <div class="destination">
+            <h3>Paris</h3>
+            <img src="paris.jpg" alt="Eiffel Tower in Paris during sunset">
+            <p>Experience the romantic charm of Paris.</p>
+            <p><strong>Price per Head:</strong> $800</p>
+            <p><strong>Facilities:</strong> 4-star hotel, guided tours, breakfast included</p>
+            <p><strong>Must-Visit Places:</strong> Eiffel Tower, Louvre Museum, Montmartre</p>
+        </div>
+        <div class="destination">
+            <h3>Tokyo</h3>
+            <img src="tokyo.jpg" alt="Tokyo skyline">
+            <p>Explore the vibrant culture of Tokyo.</p>
+            <p><strong>Price per Head:</strong> $900</p>
+            <p><strong>Facilities:</strong> Luxury hotel, city tours, traditional meals</p>
+            <p><strong>Must-Visit Places:</strong> Shibuya Crossing, Tokyo Tower, Senso-ji Temple</p>
+        </div>
+        <div class="destination">
+            <h3>New York</h3>
+            <img src="new york.jpg" alt="Times Square in New York City">
+            <p>Discover the bustling streets of New York City.</p>
+            <p><strong>Price per Head:</strong> $950</p>
+            <p><strong>Facilities:</strong> Central accommodation, sightseeing bus tours, meals included</p>
+            <p><strong>Must-Visit Places:</strong> Times Square, Central Park, Statue of Liberty</p>
+        </div>
+    </section>
+    <div class="destination">
+        <h3>Rome</h3>
+        <img src="rome1.avif" alt="Times Square in New York City">
+        <p>Discover the Timeless Beauty of Rome</p>
+        <p><strong>Price per Head:</strong> $950</p>
+        <p><strong>Facilities:</strong> Central accommodation, sightseeing bus tours, traditional meals</p>
+        <p><strong>Must-Visit Places:</strong> Must-Visit Places:The Colosseum,Vatican City,Trevi Fountain,Roman Forum</p>
+    </div>
+</section>
+<div class="destination">
+    <h3>Switzerland</h3>
+    <img src="switzerland.webp" alt="Scenic view of the Swiss Alps">
+    <p>Discover the Scenic Beauty of Switzerland</p>
+    <p><strong>Price per Head:</strong> $950</p>
+    <p><strong>Facilities:</strong> Central accommodation, sightseeing tours, traditional Swiss meals</p>
+    <p><strong>Must-Visit Places:</strong> Jungfraujoch, Lake Geneva, Château de Chillon, Lucerne Old Town</p>
+</div>
+
+    
+    
+
+    <section id="packages">
+        <h2>Tour Packages</h2>
+        <div class="package">
+            <h3>Weekend Getaway</h3>
+            <div class="image-container">
+            <img src="pattaya1.jpg" alt="pattaya" width="50%" height="400">
+            <img src="pattaya2.jpg" alt="pattaya" width="50%" height="400">
+            </div>
+            <p>Escape the city for a weekend of relaxation.</p>
+            <a href="#" class="cta-button" 
+               data-title="Weekend Getaway" 
+               data-description="Enjoy a peaceful retreat with nature walks and spa treatments of <b>Pataya</b>"
+               data-price="$299"
+               data-amenities="Complimentary breakfast, Wi-Fi, Spa access"
+               data-facilities="Outdoor pool, Fitness center">Learn More</a>
+        </div>
+        <div class="package">
+            <h3>Adventure Trip</h3>
+            <div class="image-container">
+            <img src="siurana catalonia.jpg" alt="Siurana" width="50%" height="400">
+            <img src="montserrat-barcelona-24.jpg" alt="Siurana" width="50%" height="400"></div>
+            <p>Join us for an exciting adventure in the mountains.</p>
+            <a href="#" class="cta-button" 
+               data-title="Adventure Trip" 
+               data-description="Experience thrilling hikes, rock climbing, and breathtaking views of <b>Spain</b>."
+               data-price="$499"
+               data-amenities="Guided tours, Meals included"
+               data-facilities="Camping gear, Transportation included">Learn More</a>
+        </div>
+        <div class="package">
+            <h3>Maui Beach Vacation</h3>
+            <div class="image-container">
+            <img src="mauibeach.jpg" alt="mauibeach" width="50%" height="400">
+            <img src="mauibeach2.jpg" alt="mauibeach" width="50%" height="400"></div>
+            <p>Relax on the pristine shores of Maui, Hawaii, with crystal-clear waters and breathtaking sunsets.</p>
+            <a href="#" class="cta-button" 
+               data-title="Maui Beach Vacation" 
+               data-description="Unwind on the beautiful beaches of Maui, enjoy water sports, and watch stunning sunsets over the Pacific Ocean."
+               data-price="$899"
+               data-amenities="Beachfront accommodation, Water sports, Daily meals"
+               data-facilities="Spa, Pool access, Shuttle service">Learn More</a>
+        </div>
+        <div class="package">
+            <h3>Santorini Dream Vacation</h3>
+            <div class="image-container">
+            <img src="santorini.jpeg" alt="Santorini, Greece" width="50%" height="400">
+            <img src="santorini2.jpg" alt="Santorini, Greece" width="50%" height="400"></div>
+            <p>Experience the magical sunsets and stunning whitewashed buildings of Santorini, Greece.</p>
+            <a href="#" class="cta-button" 
+               data-title="Santorini Dream Vacation" 
+               data-description="Enjoy breathtaking views of the caldera, relax on black sand beaches, and immerse yourself in Greek culture."
+               data-price="$1,199"
+               data-amenities="Luxury accommodation, Sunset cruises, Greek cuisine"
+               data-facilities="Private tours, Pool access, Transport included">Learn More</a>
+        </div>
+        
+        
+        
+    </section>
+    
+    
+
+  
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to <strong>Travel Co.</strong>, your trusted partner in creating extraordinary travel experiences. With over 15 years of experience in the travel industry, we specialize in curating personalized tours that cater to every type of traveler, whether you're an adventure seeker, a cultural explorer, or simply looking for a relaxing getaway.</p>
+        
+        <p>Founded in <strong>2005</strong>, we began as a small, passionate team of travel enthusiasts dedicated to making every trip memorable. Over the years, we have grown into a leading travel agency, offering a variety of travel packages to the world’s most sought-after destinations. Despite our growth, we have remained committed to our core mission: delivering exceptional, tailor-made travel experiences for our clients.</p>
+        
+        <h3>Our Mission</h3>
+        <p>Our mission is simple: to connect people with the world's most breathtaking destinations, while providing unparalleled customer service and value. We aim to create lasting memories for our clients by curating unique travel experiences that are safe, seamless, and most importantly, unforgettable.</p>
+        
+        <h3>Our Vision</h3>
+        <p>At <strong>Travel Co.</strong>, we envision a world where travel is accessible to all, where people from every corner of the globe can explore new cultures, discover hidden gems, and form meaningful connections. We strive to be the go-to travel partner for individuals, families, and groups who are looking to enrich their lives through travel.</p>
+    
+        <h3>Why Choose Us?</h3>
+        <ul>
+            <li><strong>Expert Knowledge:</strong> Our team consists of seasoned travel experts who know the ins and outs of each destination we offer. From the best local restaurants to hidden gems off the beaten path, we provide insider knowledge that makes your experience unique.</li>
+            <li><strong>Personalized Service:</strong> We understand that every traveler is different, which is why we offer customized itineraries that fit your needs, preferences, and budget. Whether you're looking for a luxury escape or a budget-friendly adventure, we’ve got you covered.</li>
+            <li><strong>Customer Satisfaction:</strong> Our clients’ satisfaction is our top priority. From the moment you book with us to the time you return home, we ensure your experience is smooth and stress-free. Our team is always available to assist you with any questions or concerns.</li>
+            <li><strong>Eco-friendly Travel:</strong> We are committed to responsible travel and promoting sustainability. We encourage eco-friendly tourism practices and offer tours that support local communities and minimize environmental impact.</li>
+        </ul>
+        
+        <h3>Our Values</h3>
+        <ul>
+            <li><strong>Integrity</strong> – We believe in being honest, transparent, and reliable in all our dealings with clients, partners, and employees.</li>
+            <li><strong>Innovation</strong> – We continuously seek new and creative ways to enhance the travel experience, whether through technology or unique itineraries.</li>
+            <li><strong>Excellence</strong> – We are dedicated to delivering the highest quality service in every aspect of your trip, from planning to execution.</li>
+            <li><strong>Teamwork</strong> – We collaborate with trusted partners, local experts, and our clients to ensure a seamless, well-coordinated experience.</li>
+            <li><strong>Passion</strong> – We’re passionate about travel and dedicated to sharing that passion with our clients, helping them discover the world in a way that leaves a lasting impact.</li>
+        </ul>
+    
+        
+    
+        <h3>Join Us on Your Next Adventure</h3>
+        <p>Whether you’re planning a solo trip, a romantic getaway, or a family vacation, <strong>Travel Co.</strong> is here to make your travel dreams a reality. Let us take care of the details, so you can focus on enjoying the journey.</p>
+        <p>Get in touch with us today and start planning your next unforgettable adventure!</p>
+    </section>
+    
+
+    <footer id="contact">
+        <h2 style="color: white;">Contact Us</h2> 
+        <p>Email: info@travelco.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+    
+
+    
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2 id="modal-title"></h2>
+            <div id="modal-description"></div>
+        </div>
+    </div>
+
+    
+    <div id="booking-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" id="close-booking">&times;</span>
+            <h2>Booking Form</h2>
+            <form id="booking-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <button type="submit">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("modal");
+        const closeButton = document.querySelector(".close-button");
+        const bookingModal = document.getElementById("booking-modal");
+        const bookNowButton = document.getElementById("book-now-button");
+        const closeBookingButton = document.getElementById("close-booking");
+
+        document.querySelectorAll(".cta-button").forEach(button => {
+            button.addEventListener("click", function(event) {
+                event.preventDefault();
+                if (this.id !== "book-now-button") {
+                    const packageTitle = this.getAttribute("data-title");
+                    const packageDescription = this.getAttribute("data-description");
+                    const packagePrice = this.getAttribute("data-price");
+                    const packageAmenities = this.getAttribute("data-amenities");
+                    const packageFacilities = this.getAttribute("data-facilities");
+
+                    document.getElementById("modal-title").innerText = packageTitle;
+                    document.getElementById("modal-description").innerHTML = `
+                        <p>${packageDescription}</p>
+                        <p><strong>Price:</strong> ${packagePrice}</p>
+                        <p><strong>Amenities:</strong> ${packageAmenities}</p>
+                        <p><strong>Facilities:</strong> ${packageFacilities}</p>
+                    `;
+
+                    modal.style.display = "block";
+                } else {
+                    bookingModal.style.display = "block";
+                }
+            });
+        });
+
+        closeButton.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+
+        closeBookingButton.addEventListener("click", () => {
+            bookingModal.style.display = "none";
+        });
+
+        window.addEventListener("click", (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+            if (event.target === bookingModal) {
+                bookingModal.style.display = "none";
+            }
+        });
+
+        document.getElementById("booking-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Booking submitted! Thank you.");
+            bookingModal.style.display = "none";
+            this.reset(); 
+        });
+    </script>
+</body>
+</html>
